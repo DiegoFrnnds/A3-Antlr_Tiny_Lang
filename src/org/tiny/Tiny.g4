@@ -60,4 +60,4 @@ Mult: ('*'|'/');
 NUM : '0' | '-'?[1-9][0-9]*;
 ID: [a-z][a-zA-Z0-9_]*;
 WS : [ \t\n]+ -> skip;
-COMMENT : '--' ~[\r\n]* -> skip;
+COMMENT : '{' ~[\r\n]* '}' -> skip;
